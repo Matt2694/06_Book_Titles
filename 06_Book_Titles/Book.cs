@@ -17,7 +17,7 @@
 
             string[] cap;
             string finalWord = "";
-            cap = Title.Split(' ');
+            cap = Titleized.Split(' ');
             string[] nonCap = { "and", "over", "the", "in", "of", "an", "a" };
             bool firstRun = true;
             foreach (string word in cap){
