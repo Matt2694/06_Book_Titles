@@ -18,7 +18,7 @@
             string[] cap;
             string finalWord = "";
             cap = title.Split(' ');
-            string[] nonCap = { "and", "over", "the", "in", "of", "an", "a" };
+            string[] nonCap = { "and", "the", "in", "of", "an", "a" };
             bool firstRun = true;
             foreach (string word in cap){
                 if (!Contains(word, nonCap) || firstRun){
