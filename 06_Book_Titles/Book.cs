@@ -2,7 +2,7 @@
 
     internal class Book{
 
-        internal string Titleized;
+        private string Titleized;
         public string Title{
 
             get{
