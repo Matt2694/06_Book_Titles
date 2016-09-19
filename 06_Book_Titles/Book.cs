@@ -2,22 +2,22 @@
 
     internal class Book{
 
-        private string Titleized;
+        private string title;
         public string Title{
 
             get{
-                return Titleized;
+                return title;
             }
             internal set{
-                Titleized = value;
-                Titleized = Titleize();
+                title = value;
+                title = Titleize();
             }
         }
         public string Titleize(){
 
             string[] cap;
             string finalWord = "";
-            cap = Titleized.Split(' ');
+            cap = title.Split(' ');
             string[] nonCap = { "and", "over", "the", "in", "of", "an", "a" };
             bool firstRun = true;
             foreach (string word in cap){
