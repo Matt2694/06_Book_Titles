@@ -6,11 +6,11 @@
         public string Title{
 
             get{
+                title = Titleize();
                 return title;
             }
             internal set{
                 title = value;
-                title = Titleize();
             }
         }
         public string Titleize(){
